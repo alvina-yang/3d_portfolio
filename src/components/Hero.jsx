@@ -3,7 +3,7 @@ import { styles } from '../styles';
 import { MoonCanvas } from './canvas';
 import Typewriter from 'typewriter-effect';
 import { fadeIn, slideIn } from '../utils/motion';
-import {NightSkyCanvas} from './canvas';
+import { NightSkyCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'>
@@ -14,18 +14,21 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
-            <Typewriter 
-            options= {{
-              strings: ["Hi, I'm Alvina"],
-              autoStart: true,
-              loop: true,
-              pauseFor: 10000,
-            }}
+            <Typewriter
+              options={{
+                strings: ["Hi, I'm Alvina"],
+                autoStart: true,
+                loop: true,
+                pauseFor: 10000,
+              }}
             />
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a student at the University <br className="sm:block hidden" /> of Toronto specializing in <br className="sm:block hidden" />  computer science.
+            This is my portfolio which is no longer kept. <br />
+            <a href="https://alvina-yang.github.io/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+               Click to see my new portfolio.
+            </a>
           </p>
         </div>
       </div>
